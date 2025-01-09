@@ -26,12 +26,12 @@ export default function Navbar() {
           <ul className="hidden md:flex space-x-8 lg:space-x-12 xl:space-x-16">
             {navItems.map((item) => (
               <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
+                <Link
+                  to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
                   className="text-white text-sm lg:text-base xl:text-lg leading-relaxed tracking-wider font-martian font-medium hover:text-gray-200 transition-colors duration-300 text-[#D0CAC6]"
                 >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -57,13 +57,13 @@ export default function Navbar() {
           <ul className="flex flex-col items-center py-6 space-y-6">
             {navItems.map((item) => (
               <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
+                <Link
+                  to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
                   className="text-white text-base sm:text-lg leading-relaxed tracking-wider font-martian font-medium hover:text-gray-200 transition-colors duration-300 text-[#D0CAC6]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
