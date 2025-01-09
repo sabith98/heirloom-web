@@ -7,11 +7,11 @@ import HomePage from "./pages/HomePage";
 const App: React.FC = () => {
   return (
     <Router>
-      <MainLayout>
-        <Routes>
+      <Routes>
+        <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-        </Routes>
-      </MainLayout>
+        </Route>
+      </Routes>
     </Router>
   );
 };
