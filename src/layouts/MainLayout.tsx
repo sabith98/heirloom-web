@@ -1,12 +1,11 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/common/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-gray-800 text-white p-4">
-        <h1 className="text-2xl font-bold">Heirloom</h1>
-      </header>
-      <main className="flex-grow p-4">
+    <div>
+      <Navbar />
+      <main className="min-h-screen">
         <Outlet />
       </main>
       <footer className="bg-gray-800 text-white p-4 text-center">
