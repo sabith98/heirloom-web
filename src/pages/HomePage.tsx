@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import NewArrivals from "../components/home/NewArrivals";
 import ProductShowcase from "../components/home/ProductShowcase";
 import RefinedElegance from "../components/home/RefinedElegance";
+import TimelessDesign from "../components/home/TimelessDesign";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <NewArrivals />
       <RefinedElegance />
       <ProductShowcase />
+      <TimelessDesign />
     </>
   );
 };
