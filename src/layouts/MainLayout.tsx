@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/footer/Footer";
 
 const MainLayout = () => {
   return (
@@ -8,9 +9,7 @@ const MainLayout = () => {
       <main className="min-h-screen">
         <Outlet />
       </main>
-      <footer className="bg-gray-800 text-white p-4 text-center">
-        &copy; 2025 Heirloom
-      </footer>
+      <Footer />
     </div>
   );
 };
