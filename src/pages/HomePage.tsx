@@ -1,5 +1,21 @@
+import FeaturedSection from "../components/home/FeaturedSection";
+import Hero from "../components/home/Hero";
+import NewArrivals from "../components/home/NewArrivals";
+import ProductShowcase from "../components/home/ProductShowcase";
+import RefinedElegance from "../components/home/RefinedElegance";
+import TimelessDesign from "../components/home/TimelessDesign";
+
 const HomePage = () => {
-  return <h2 className="text-xl font-semibold">Welcome to Furniture Store</h2>;
+  return (
+    <>
+      <Hero />
+      <FeaturedSection />
+      <NewArrivals />
+      <RefinedElegance />
+      <ProductShowcase />
+      <TimelessDesign />
+    </>
+  );
 };
 
 export default HomePage;
